@@ -1,0 +1,20 @@
+<h1>Listing Animals</h1>
+ 
+<h2>Monday 2nd Feb</h2>
+
+<table>
+  <tr>
+    <th>Animal</th>
+    <th>Amount</th>
+  </tr>
+ 
+  <% @adventure.each do |adventure| %>
+    <tr>
+      <td><%= adventure.animal %></td>
+      <td><%= adventure.amount %></td>
+    </tr>
+  <% end %>
+  
+</table>
+
+<%= link_to 'New Adventure', new_adventure_path %>
